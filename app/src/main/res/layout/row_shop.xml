@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg"
+        android:layout_margin="2dp">
+
+<!--        online / ofline status-->
+        <ImageView
+            android:id="@+id/onlineIv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/shape_circle01"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/shopClosedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:text="Closed"
+            android:textColor="@color/Red"
+            android:textSize="11sp"
+            android:background="@drawable/shap_rect04"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/shopNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Name"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="true"
+                android:textSize="19sp"
+                android:drawableStart="@drawable/baseline_store_mall"
+                android:drawablePadding="5dp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="#2C3CFA"/>
+
+            <TextView
+                android:id="@+id/phoneTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/baseline_phone"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                android:maxLines="1"
+                android:textColor="@color/baseColor"/>
+            <TextView
+                android:id="@+id/addressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:drawableStart="@drawable/baseline_location_city_24"
+                android:drawablePadding="5dp"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/baseColor"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:numStars="5"
+                android:rating="3.5"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

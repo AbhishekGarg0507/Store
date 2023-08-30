@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--bottom sheet layout to display product details and edit/delete product-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Top tool bar -->
+    <RelativeLayout
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedCorner"
+            app:srcCompat="@drawable/top_background" />
+
+        <ImageButton
+            android:id="@+id/backButn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:minHeight="50dp"
+            app:srcCompat="@drawable/baseline_arrow_back"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Details"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/baseColor"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/editProductBt"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/deleteProductBt"
+            android:background="@null"
+            android:src="@drawable/baseline_edit"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/deleteProductBt"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:minHeight="50dp"
+            app:srcCompat="@drawable/baseline_delete"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </RelativeLayout>
+    <!--Display details-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topToolbar"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+
+            <TextView
+                android:id="@+id/discountNoteTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rect03"
+                android:padding="5dp"
+                android:text="10% OFF"
+                android:textColor="@color/colorGreen" />
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:paddingStart="5dp"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="5dp"
+            android:textSize="18sp"
+            android:text="Category" />
+
+            <TextView
+                android:id="@+id/descriptionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:textSize="18sp"
+                android:text="Product Description" />
+
+        <TextView
+            android:id="@+id/quantityTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="5dp"
+            android:textSize="18sp"
+            android:text="Quantity" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/discountedPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="5dp"
+                    android:text="Rs. 100"
+                    android:textSize="18sp"
+                    android:textColor="@color/baseColor" />
+
+                <TextView
+                    android:id="@+id/originalPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/discountedPriceTv"
+                    android:text="Rs. 150"
+                    android:textSize="18sp"
+                    android:textColor="#FF0000" />
+
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

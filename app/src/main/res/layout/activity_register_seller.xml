@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grocery.store.activities.RegisterUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/top_background" />
+
+        <ImageButton
+            android:id="@+id/backBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_arrow_back"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="361dp"
+            android:layout_height="73dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="-75dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="591dp"
+            android:text="Register Seller"
+            android:textColor="#2945DD"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="457dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/nameEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_person"
+                    android:ems="10"
+                    android:hint="Person Name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/shopNameEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_store_24"
+                    android:ems="10"
+                    android:hint="Shop Name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+
+                <EditText
+                    android:id="@+id/phoneEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameEt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_phone"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/deliveryFeeEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_local_shipping"
+                    android:ems="10"
+                    android:hint="Delivery Fee"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/stateEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneEt"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableStart="@drawable/baseline_location_city_24"
+                    android:ems="10"
+                    android:hint="State"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+
+                <EditText
+                    android:id="@+id/countryEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneEt"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/stateEt"
+                    android:drawableStart="@drawable/baseline_location_city_24"
+                    android:ems="10"
+                    android:hint="Country"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/cityEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneEt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/countryEt"
+                    android:drawableStart="@drawable/baseline_location_city_24"
+                    android:ems="10"
+                    android:hint="City"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/addressEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stateEt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_location_city_24"
+                    android:ems="10"
+                    android:hint="Complete Address"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressEt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_email"
+                    android:ems="10"
+                    android:hint="email"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailEt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_lock"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/confirmPassEt"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passwordEt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:drawableStart="@drawable/baseline_lock"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <Button
+                    android:id="@+id/registerBt"
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/confirmPassEt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="144dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="146dp"
+                    android:backgroundTint="#6672FF"
+                    android:text="Register" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
